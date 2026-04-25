@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wordle</title>
+  <title>Squirrel-dle</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>WORDLE</h1>
+    <h1>SQUIRREL-DLE</h1>
   </header>
 
   <div id="message"></div>
@@ -18,5 +18,13 @@
   <div id="keyboard"></div>
 
   <script src="app.js"></script>
+  <div id="win-overlay">
+    <pre id="squirrel-art"></pre>
+    <div class="win-msg" id="win-msg"></div>
+    <div class="win-word" id="win-word"></div>
+    <button id="play-again" onclick="location.reload()">Play Again</button>
+  </div>
 </body>
 </html>
+
+
