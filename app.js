@@ -20,7 +20,7 @@ let VALID_WORDS = new Set();
 
 async function loadWords() {
   try {
-    const res = await fetch("https://raw.githubusercontent.com/tabatkins/wordle-list/main/words");
+    const res = await fetch("/words.txt");
     const text = await res.text();
     const all = text.trim().split("\n").map(w => w.trim().toLowerCase()).filter(w => w.length === 5);
     VALID_WORDS = new Set(all);
@@ -245,3 +245,4 @@ function showWin(msg, word) {
   document.getElementById("win-word").textContent = word;
   document.getElementById("win-overlay").classList.add("show");
 }
+
