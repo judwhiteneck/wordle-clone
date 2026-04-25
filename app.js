@@ -232,17 +232,9 @@ loadWords();
 
 
 function showWin(msg, word) {
-  const art = [
-    "    \\_/\\ ",
-    "   ( o.o)",
-    "   > ^ < ",
-    "  /|   |\\ ",
-    " (_|   |_)"
-  ].join("\n");
-
-  document.getElementById("squirrel-art").textContent = art;
   document.getElementById("win-msg").textContent = msg;
   document.getElementById("win-word").textContent = word;
   document.getElementById("win-overlay").classList.add("show");
 }
+
 
